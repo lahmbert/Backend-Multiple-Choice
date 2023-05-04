@@ -1,0 +1,22 @@
+GET http://localhost:3001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJMYWhtYmVydCIsImVtYWlsIjoiZWxAZWwuZWwiLCJpYXQiOjE2ODMwOTU2NDQsImV4cCI6MTY4MzA5NTY0NH0.EjOAsV5943IugIgN8OjsNMALbzL5LqWC4-Mr6IvDQjdshdsj
+
+###
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name": "Aat",
+    "email": "at@at.at",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email": "at@at.at",
+    "password": "123456"
+}
